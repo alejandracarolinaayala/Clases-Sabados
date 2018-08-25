@@ -1,0 +1,109 @@
+Pedir al usuario la edad
+Mostrar por pantalla "mi edad es 25"
+
+
+
+++++uso del for
+int main()
+{
+    int miEdad;
+    int i=0;
+
+ for(i; i<3; i++) aca repite el codigo 3 veces
+    {
+        printf("Ingrese su edad:);
+        scanf("%d",&miEdad);
+        printf("su edad es: %d", miEdad);
+
+    } */
+
+
+
+
+    return 0;
+
+
+
+
+}
+
+
+
+
+++++++uso de while
+
+int main()
+{
+    int miEdad;
+    int i=0;
+
+    while(i<3)
+    {
+        printf("Ingrese su edad:);
+        scanf("%d",&miEdad);
+        printf("su edad es: %d", miEdad);
+i++;
+    }
+    return 0;
+}
+
+
++++++++++++++++++++++++++++++++ promedio
+
+int main()
+{
+    int miEdad;
+    int i=0;
+    float promedio;
+    float acumulador=0;
+
+    i=0;
+    while(i<2)
+    {
+
+        printf("Ingrese su edad:");
+        scanf("%d",&miEdad);
+        printf("su edad es: %d", miEdad);
+        acumulador= acumulador + miEdad;
+        i++;
+    }
+
+    promedio= acumulador / i;
+
+
+    printf("%.2f", promedio);
+
+return 0;
+
+
+++++++++++++++++++++++++++ DO WHILE
+
+int main()
+{
+    int miEdad;
+    int i=0;
+    float promedio;
+    float acumulador=0;
+    int continuar=1;
+
+
+    do{
+
+        printf("Ingrese su edad:");
+        scanf("%d",&miEdad);
+        printf("su edad es: %d", miEdad);
+        acumulador= acumulador + miEdad;
+        i++;
+        printf("Desea continuar? (1/0):");
+        scanf("%d", &continuar);
+
+    }
+    while(continuar);
+
+    promedio= acumulador / i;
+
+
+    printf("Promedio: %.2f", promedio); //%.2f significa que apareceran 2 decimales si queresmos que salgan
+    //todos tenemos que poner %f\n
+
+return 0 ;
